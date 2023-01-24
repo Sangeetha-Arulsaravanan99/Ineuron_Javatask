@@ -1,20 +1,30 @@
-package com.assigment1;
-/*Task 4- Write a program to print all even numbers from 1-200*/
+package com.assigments4;
 
-
+import java.util.ArrayList;
 
 public class Task4 {
+	
+	/*4-	Create a list of values and print the second element, second last element.
+Input – 10,45, 90,45, 23, 90, 44
+Output – 45,90*/
+
 
 	public static void main(String[] args) {
-		int numbers = 200;
 		
-		System.out.println("List of the prime numbers from 1 t0 200 : \n");
+		ArrayList<Integer>  list = new ArrayList<>();
 		
-		for (int i = 0; i <= numbers; i=i+2) {
-			System.out.println(i+" ");
-			}
+		list.add(10);
+		list.add(45);
+		list.add(90);
+		list.add(45);
+		list.add(23);
+		list.add(90);
+		list.add(44);
 		
-
+		System.out.println(list.get(1));
+		
+		System.out.println(list.get(5));
+ 
 	}
 
 }

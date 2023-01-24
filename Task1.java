@@ -1,26 +1,31 @@
-package com.assigment1;
-/*Task 1 – Write a program to swap two number. For example a=10 and b=20 
- * output should be a=20 and b=10*/
+package com.assigments4;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class Task1 {
+	
+	/*1-	Create a list of String and print the values in reverse order
+Input – Java, Selenium, TestNG, Git, Github
+	Output- Github, Git, TestNG, Selenium, Java*/
+
+
 
 	public static void main(String[] args) {
+		ArrayList<String>  list = new ArrayList<String>();
+		list.add("Java");
+		list.add("Selenium");
+		list.add("TestNG");
+		list.add("Git");
+		list.add("Github");
 		
-		    int a = 10;
-			int b = 20;
-			System.out.println("Before swapping the values "+a+" "+b );
-			
-			int c =a; // 10
-			
-			a=b;
-			b=c;
-			
-			System.out.println("After swapping the values "+a+" "+b );
-			
-			
-			
-				
-
-			
+		System.out.println("list of String in ArrayList  : "+ list);
+		
+		Collections.reverse(list);
+		System.out.println("List of String after the reverse order : "+ list);
+		
 	}
 
 }
